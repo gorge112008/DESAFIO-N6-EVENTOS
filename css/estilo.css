@@ -1,0 +1,142 @@
+.titulo h2 {
+  color: #f00;
+}
+.titulo h2 b {
+  color: #91d;
+}
+li b {
+  color: #f50;
+}
+.alumno {
+  color: #a4f;
+}
+.alumno b {
+  color: #040;
+}
+.titulo {
+  width: 100%;
+}
+
+#navegador h3 {
+  color: #43f;
+  animation-name: deslizar;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#cuerpo::after {
+  content: "";
+  background: url(comida.jpeg);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  size: cover;
+  z-index: -1;
+}
+
+.recarga {
+  text-align: center;
+  border: red solid 1px;
+}
+.hidden {
+  display: none;
+}
+#gracias {
+  text-align: center;
+  color: #a4f;
+}
+
+.nav {
+  background-color: slateblue;
+}
+
+.nav__li {
+  display: inline-flex;
+  width: 16%;
+  padding: 5px;
+  color: #fff;
+  margin-right: 20px;
+  margin-left: -15px;
+}
+
+.nav__li i {
+  box-sizing: border-box;
+  text-align: right;
+  margin-right: 1px;
+  margin-top: 2px;
+}
+
+.btn {
+  white-space: normal;
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+.btn:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+
+#select_cantidad {
+  width: 6%;
+  display: inline-flex;
+}
+#delete_cantidad {
+  width: 6%;
+  display: inline-flex;
+}
+.pedido-hecho {
+  width: 15%;
+}
+.stock {
+  width: 15%;
+}
+.listado-añadir {
+  width: 75%;
+  border: black solid 1px;
+  display: inline-flex;
+}
+.listado-cancelar {
+  width: 75%;
+  border: black solid 1px;
+  display: inline-flex;
+}
+
+.btn_añadir {
+  float: right;
+}
+.btn_cancelar {
+  float: right;
+}
+.btn_finalizar {
+  float: right;
+}
+@keyframes deslizar {
+  0% {
+    color: red;
+  }
+  15% {
+    color: orange;
+  }
+  30% {
+    color: yellow;
+  }
+  45% {
+    color: green;
+  }
+  60% {
+    color: blue;
+  }
+  75% {
+    color: purple;
+  }
+  100% {
+    color: violet;
+  }
+}
