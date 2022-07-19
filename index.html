@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Proyecto: DeliPaso</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <script
+      src="https://kit.fontawesome.com/ddc8b3b9c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="cuerpo">
+    <header>
+      <div class="titulo">
+        <h2>
+          <i>BIENVENIDO AL SIMULADOR INTERACTIVO DE VENTA DE COMIDA RÁPIDA: </i>
+          <b>***DELIPASO***</b>
+          <hr />
+        </h2>
+      </div>
+      <div id="navegador">
+        <h3>Come todo lo que puedas imaginar a un solo clic!!!</h3>
+        <nav class="nav">
+          <ul class="nav__ul">
+            <li class="nav__li">
+              <i class="fas fa-house"></i
+              ><input
+                type="button"
+                value="Inicio"
+                id="btn_inicio"
+                class="btn"
+              />
+            </li>
+            <li class="nav__li">
+              <i class="fas fa-bell-concierge"></i
+              ><input type="button" value="Menú" id="btn_menu" class="btn" />
+            </li>
+            <li class="nav__li">
+              <i class="fas fa-circle-plus"></i
+              ><input
+                type="button"
+                value="Añadir Pedido"
+                id="btn_añadir"
+                class="btn"
+              />
+            </li>
+            <li class="nav__li">
+              <i class="fas fa-circle-minus"></i
+              ><input
+                type="button"
+                value="Cancelar Pedido"
+                id="btn_cancelar"
+                class="btn"
+              />
+            </li>
+            <li class="nav__li">
+              <i class="fas fa-clipboard-check"></i
+              ><input
+                type="button"
+                value="Finalizar Pedido"
+                id="btn_finalizar"
+                class="btn"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="inicio">
+      <!-- <img src="css/comida.jpeg" /> -->
+      <h4><b>DESAFÍO ENTREGABLE: INCORPORAR EVENTOS</b></h4>
+      <p>
+        El proyecto se basa en la creación de un Simulador Interactivo de Venta
+        de comida rápida.<br />
+      </p>
+      <b>Premisa:</b>
+      Algoritmo de simulación de un negocio de venta de comida rápida con la
+      creación del menú de comida como objetos con distintas propiedades
+      mediante una función constructora, agregando los menús dentro de un array
+      y aplicando un filtro para obtener nuevos arrays con variados conjuntos de
+      menús.<br />
+      Definiendo métodos y funciones se ejecutará el correcto pedido o
+      cancelación de cada menú e imprimirá un reporte detallado de cada menú.<br />
+      <hr />
+      <b>Actualización:</b>
+      <p>
+        Se incorporó el uso de eventos que permitirá manipular el DOM para
+        trabajar directamente en el HTML.<br />
+        En base a una barra de navegación se podrá ver todo el menú
+        disponible.<br />
+        Se podra añadir y cancelar pedidos.<br />
+        Al finalizar el pedido se podra observar al detalle el pedido realizado
+        y se implementará un botón de finalización.<br />
+        Este botón finalizará la simulación, permitiendo solo mostrar el inicio
+        y el reporte final.<br />
+      </p>
+    </div>
+    <div id="menu" class="hidden">
+      <h4>*Menú Disponible:</h4>
+      <ol id="lista">
+        <!-- script lista menú -->
+      </ol>
+    </div>
+    <div id="pedido_realizar" class="hidden">
+      <h4>*Seleccionar Menú:</h4>
+      <input
+        type="button"
+        value="Menú Económico"
+        id="btn_economico"
+        class="btn_tipo-menu"
+      />
+      <input
+        type="button"
+        value="Menú Deluxe"
+        id="btn_deluxe"
+        class="btn_tipo-menu"
+      />
+      <input
+        type="button"
+        value="Todo el Menú Disponible"
+        id="btn_todomenu"
+        class="btn_tipo-menu"
+      />
+      <div id="pedido_realizar-menu" class="hidden">
+        <h4>*Añadir Pedido:</h4>
+        <ol id="pedido">
+          <!-- script lista menú -->
+        </ol>
+        <input
+          type="button"
+          value="AÑADIR"
+          id="btn_añadir-aceptar"
+          class="btn_añadir"
+        />
+      </div>
+    </div>
+    <div id="pedido_cancelar" class="hidden">
+      <h4>
+        <!-- script mensaje cancelar -->
+      </h4>
+      <ol id="cancelado">
+        <!-- script cancelar menú -->
+      </ol>
+      <input
+        type="button"
+        value="CANCELAR"
+        id="btn_cancelar-aceptar"
+        class="btn_cancelar"
+      />
+    </div>
+    <div id="pedido_finalizar" class="hidden">
+      <h4 id="pedido_reporte">Reporte detallado del pedido:</h4>
+      <!-- script reporte pedido -->
+      <input
+        type="button"
+        value="FINALIZAR"
+        id="btn_finalizar-aceptar"
+        class="btn_finalizar"
+      />
+    </div>
+    <hr />
+    <div class="finalizar">
+      <h2 id="gracias" class="hidden">Muchas gracias por su visita!!!</h2>
+      <hr />
+      <ul>
+        <li class="alumno">ALUMNO: <b>Jorge Carlos Gayoso Ugas. </b></li>
+      </ul>
+    </div>
+    <div class="recarga">
+      <a href="index.html">
+        <b>RECARGAR ALGORITMO</b>
+      </a>
+    </div>
+    <script src="js/miarchivo.js"></script>
+  </body>
+</html>
